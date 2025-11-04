@@ -29,6 +29,9 @@ jobs:
 
         - name: Run tests
           run: PYTHONPATH=. pytest -v
-
+        
+        - name: Run counter
+          run: python tools/count_stats.py
+          
         - name: Run helloworld
           run: python src/helloworld.py
